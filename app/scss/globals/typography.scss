@@ -1,0 +1,33 @@
+@use "../util" as *;
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+}
+
+.title-text {
+  font-size: 26px;
+  line-height: 36px;
+  @include breakpoint(md) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  @include breakpoint(lg) {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+
+.description-text {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  @include breakpoint(md) {
+    font-size: 12px;
+  }
+  @include breakpoint(lg) {
+    font-size: 19px;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,84 @@
+@use "../util/" as *;
+
+.source-container {
+  padding: 0 8px;
+  position: relative;
+  @include breakpoint(md) {
+    max-width: 710px;
+  }
+  @include breakpoint(lg) {
+    max-width: 1150px;
+  }
+}
+
+.source-card {
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.08));
+  width: 70%;
+  @include breakpoint(md) {
+    width: 100%;
+  }
+}
+
+.source-card-1 {
+  margin-left: 30%;
+  @include breakpoint(md) {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  @include breakpoint(lg) {
+    margin-top: 80px;
+  }
+}
+
+.card-body {
+  padding: 15px 20px;
+}
+
+.source-card-text {
+  font-size: 12px;
+  line-height: 16px;
+  @include breakpoint(lg) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.source-card-link {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 800;
+  @include breakpoint(lg) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.source-text {
+  padding: 0px 30px;
+  @include breakpoint(md) {
+    margin-top: 85px;
+    padding: 0;
+  }
+  @include breakpoint(lg) {
+    margin-top: 130px;
+  }
+}
+
+.source-text-title {
+  font-size: 28px;
+  line-height: 31px;
+  @include breakpoint(lg) {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+
+.source-text-desc {
+  padding-right: 30px;
+  font-size: 12px;
+  line-height: 16px;
+  @include breakpoint(lg) {
+    font-size: 19px;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,146 @@
+@use "../util/" as *;
+
+.hero {
+  position: relative;
+}
+
+.hero-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  svg {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+.hero-container {
+  padding: 12px 12px 20px 12px;
+  @include breakpoint(md) {
+    padding: 70px 0 100px 0;
+    max-width: 710px;
+  }
+  @include breakpoint(lg) {
+    padding: 100px 0 150px 0;
+    max-width: 1080px;
+  }
+  .hero__title {
+    @include breakpoint(lg) {
+      margin-bottom: 13px;
+    }
+  }
+  .hero__description {
+    @include breakpoint(md) {
+      margin-bottom: 25px;
+    }
+    @include breakpoint(lg) {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.swiper-slide {
+  @include breakpoint(md) {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+  }
+}
+
+// .swiper-pagination {
+//   position: relative;
+//   top: 10px;
+//   @include breakpoint(md) {
+//     position: absolute;
+//     top: 105%;
+//   }
+// }
+
+// .swiper-pagination {
+//   position: relative;
+//   top: 10px;
+//   z-index: 111;
+// }
+
+.swiper-pagination {
+  position: relative;
+  top: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--clr-primary);
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 46px;
+  @include breakpoint(md) {
+    font-size: 38px;
+    grid-column: 1/7;
+    grid-row: 2/3;
+  }
+  @include breakpoint(lg) {
+    font-size: 59px;
+    line-height: 71px;
+  }
+}
+
+.hero__img--wrapper {
+  position: relative;
+  margin-top: -95px;
+  z-index: -1;
+  filter: drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.160784));
+  @include breakpoint(md) {
+    margin-top: 0;
+    grid-column: 5/12;
+    grid-row: 1/6;
+  }
+}
+
+.hero__description {
+  margin: 10px 0 16px 0;
+  @include breakpoint(md) {
+    grid-column: 1/6;
+    grid-row: 3/4;
+  }
+}
+
+.hero__buttons {
+  @include breakpoint(md) {
+    grid-column: 1/6;
+    grid-row: 4/5;
+  }
+}
+
+.hero-button {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 900;
+  width: 140px;
+  padding: 10px 0;
+  letter-spacing: 1.3px;
+  transition: color 200ms ease-in-out, background-color 300ms ease-in-out;
+  @include breakpoint(md) {
+    width: 130px;
+  }
+  @include breakpoint(lg) {
+    font-size: 21px;
+    line-height: 25px;
+    padding: 20px 0;
+    width: 200px;
+  }
+}
+
+a.button-1 {
+  &:hover {
+    background-color: white !important;
+    color: var(--clr-primary) !important;
+  }
+}
+
+a.button-2 {
+  &:hover {
+    background-color: var(--clr-primary) !important;
+    color: white !important;
+  }
+}

@@ -1,0 +1,37 @@
+@use "../util/" as *;
+
+.footer-list {
+  padding-top: 50px;
+  @include breakpoint(lg) {
+    padding-bottom: 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+.footer-link {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  transition: color 200ms ease-in-out;
+  &:hover {
+    color: var(--clr-primary) !important;
+  }
+  @include breakpoint(lg) {
+    font-size: 19px;
+    line-height: 22px;
+  }
+}
+
+.copyright {
+  font-size: 9px;
+  line-height: 19px;
+  @include breakpoint(lg) {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-size: 15px;
+    line-height: 18px;
+    max-width: 1200px;
+    margin: auto;
+  }
+}

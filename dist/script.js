@@ -1,0 +1,2 @@
+"use strict";var swiper=new Swiper(".swiper",{direction:"horizontal",loop:!0,slidesPerView:1,spaceBetween:50,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});$(".member-row").slick({dots:!0,infinite:!1,speed:300,slidesToShow:1,slidesToScroll:1,mobileFirst:!0,responsive:[{breakpoint:767,settings:"unslick"}]});
+//# sourceMappingURL=script.js.map

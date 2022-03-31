@@ -1,0 +1,23 @@
+@use "../util/" as *;
+
+.client-container {
+  padding: 60px 20px;
+  @include breakpoint(md) {
+    padding: 60px 0;
+    max-width: 620px;
+  }
+  @include breakpoint(lg) {
+    padding-bottom: 150px;
+    max-width: 940px;
+  }
+}
+
+.client-title {
+  @include breakpoint(md) {
+    max-width: 300px;
+    margin: auto;
+  }
+  @include breakpoint(lg) {
+    max-width: 400px;
+  }
+}

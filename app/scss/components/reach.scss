@@ -1,0 +1,61 @@
+@use "../util/" as *;
+
+.reach {
+  background-image: url("../assets/img/slash_black.svg");
+  background-blend-mode: normal;
+  position: relative;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position-y: -100px;
+  @include breakpoint(md) {
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-y: -50px;
+    background-position-x: -30px;
+  }
+  @include breakpoint(lg) {
+    background-position-y: -100px;
+  }
+}
+
+.reach-container {
+  position: relative;
+  padding: 20px 8px;
+  @include breakpoint(md) {
+    padding: 85px 0 55px 0;
+    max-width: 620px;
+  }
+  @include breakpoint(lg) {
+    padding: 130px 0 85px 0;
+    max-width: 945px;
+  }
+}
+
+.video-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  .title-text {
+    color: white;
+  }
+  @include breakpoint(md) {
+    top: 40%;
+  }
+}
+
+.video-button {
+  transition: all 200ms ease-in-out;
+  &:hover {
+    background-color: var(--clr-primary) !important;
+    color: white !important;
+  }
+}
+
+.reach-video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  filter: brightness(0.5);
+}
